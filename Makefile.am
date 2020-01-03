@@ -1,2 +1,2 @@
-bin_PROGRAMS = hellogtk
-hellogtk_SOURCES = hello.c
+SUBDIRS = src tests
+EXTRA_DIST = HIGTK
