@@ -1,9 +1,12 @@
 #include <stdio.h>
-#include <gtk-3.0/gtk/gtk.h>
+#include <gtk/gtk.h>
+#include "config.h"
 
 gint main(gint argc,
 		  gchar *argv[])
 {
+
+	printf(PACKAGE_STRING, "\n");
 	GtkWidget *window = NULL;
 	gtk_init(&argc, &argv);
 	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
