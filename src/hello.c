@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <gtk/gtk.h>
 #include "config.h"
+#include "cpu.h"
 
 gint main(gint argc,
 		  gchar *argv[])
 {
-
+	whine();
 	printf(PACKAGE_STRING, "\n");
 	GtkWidget *window = NULL;
 	gtk_init(&argc, &argv);
